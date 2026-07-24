@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoadMate — Download</title>
+<meta name="description" content="RoadMate — on-demand roadside assistance. Find a trusted mechanic near you and track them to your car.">
+<style>
+  :root{
+    --blue:#1565C0; --blue-lt:#1E88E5; --blue-dk:#0D47A1;
+    --orange:#FF8F00;
+    --ink:#1A2233; --muted:#5A6779; --line:#E3E8F0;
+    --bg:#F2F5F9; --card:#fff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#E9EEF6; --muted:#9AA6B8; --line:#27324a; --bg:#0E1420; --card:#161E2C; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .hero{
+    background:linear-gradient(160deg,#1E88E5,#0D47A1);
+    color:#fff; padding:52px 22px 96px; text-align:center; position:relative; overflow:hidden;
+  }
+  .hero::after{
+    content:""; position:absolute; inset:auto -10% -60px -10%; height:120px;
+    background:var(--bg); border-radius:50% 50% 0 0;
+  }
+  .icon{
+    width:104px;height:104px;border-radius:24px;margin:0 auto 18px;display:block;
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
+  }
+  .hero h1{margin:0 0 6px;font-size:34px;letter-spacing:-.6px}
+  .tag{margin:0;opacity:.9;font-size:16px}
+  .brand{
+    display:inline-block;margin-bottom:16px;font-size:12.5px;letter-spacing:.6px;
+    text-transform:uppercase;background:rgba(255,255,255,.16);padding:5px 13px;border-radius:99px;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px 70px;position:relative;z-index:2}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:26px;margin-top:-56px;box-shadow:0 10px 34px rgba(16,32,64,.10);text-align:center;
+  }
+  .dl{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    background:linear-gradient(135deg,#1E88E5,#0D47A1);color:#fff;text-decoration:none;
+    font-weight:700;font-size:18px;padding:16px 34px;border-radius:14px;
+    box-shadow:0 8px 20px rgba(21,101,192,.35); transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .dl:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(21,101,192,.42)}
+  .meta{margin-top:12px;color:var(--muted);font-size:14px}
+  h2{font-size:19px;margin:34px 0 12px;letter-spacing:-.2px}
+  h2::before{content:"";display:block;width:32px;height:3px;background:var(--orange);border-radius:2px;margin-bottom:11px}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  .steps li{
+    counter-increment:s;position:relative;padding:11px 0 11px 44px;border-bottom:1px solid var(--line);
+  }
+  .steps li:last-child{border-bottom:0}
+  .steps li::before{
+    content:counter(s);position:absolute;left:0;top:11px;width:28px;height:28px;border-radius:50%;
+    background:var(--blue);color:#fff;font-size:14px;font-weight:700;display:grid;place-items:center;
+  }
+  .note{
+    background:rgba(255,143,0,.10);border-left:3px solid var(--orange);
+    padding:13px 16px;border-radius:0 10px 10px 0;font-size:15px;margin:14px 0;
+  }
+  .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:4px}
+  .f{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px}
+  .f b{display:block;margin-bottom:3px}
+  .f span{color:var(--muted);font-size:14.5px}
+  footer{text-align:center;color:var(--muted);font-size:14px;padding:6px 22px 42px}
+  footer a{color:var(--blue)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="brand">HackTech Zone</span>
+  <img class="icon" src="icon.png" alt="RoadMate">
+  <h1>RoadMate</h1>
+  <p class="tag">Roadside help, on the way.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="card">
+    <a class="dl" id="dl" href="RoadMate.apk" download>⬇&nbsp; Download for Android</a>
+    <div class="meta">APK · 57 MB · Android 7.0 and above</div>
+  </div>
+
+  <h2>What is RoadMate?</h2>
+  <p>
+    Broken down on the road? RoadMate connects you with a verified mechanic nearby — in minutes.
+    Send a request, watch your mechanic drive to you on a live map, chat on the way, and pay in
+    cash when the job is done.
+  </p>
+
+  <div class="feat">
+    <div class="f"><b>🔧 Help in seconds</b><span>Every available mechanic near you is notified instantly.</span></div>
+    <div class="f"><b>📍 Live tracking</b><span>See exactly where your mechanic is and how long they'll take.</span></div>
+    <div class="f"><b>🧠 Smart diagnosis</b><span>Not sure what's wrong? A few questions narrow it down.</span></div>
+    <div class="f"><b>🚨 Emergency SOS</b><span>One tap for Rescue 1122, Motorway Police and more.</span></div>
+  </div>
+
+  <h2>How to install</h2>
+  <ol class="steps">
+    <li>Tap <b>Download for Android</b> above.</li>
+    <li>When the download finishes, open the file.</li>
+    <li>Android will ask permission to install from this source — tap <b>Settings</b>, turn it on, then go back.</li>
+    <li>Tap <b>Install</b>, then open RoadMate and create your account.</li>
+  </ol>
+
+  <div class="note">
+    <b>Seeing a warning?</b> Android shows a caution message for any app installed outside the
+    Play Store. RoadMate is safe — it is signed and published by HackTech Zone. Tap
+    <b>Install anyway</b> to continue.
+  </div>
+
+  <h2>Questions?</h2>
+  <p>
+    Email <a href="mailto:hello.theorbit@gmail.com">hello.theorbit@gmail.com</a> ·
+    Read our <a href="https://batool-naba.github.io/roadmate-privacy/">Privacy Policy</a>
+  </p>
+
+</div>
+
+<footer>
+  © 2026 HackTech Zone · RoadMate
+</footer>
+
+</body>
+</html>
